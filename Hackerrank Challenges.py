@@ -3,6 +3,22 @@
 import os
 import sys
 
+# Complete the compareTriplets function below.
+def compareTriplets(a, b):
+    j = 0
+    k = 0
+    
+    cont = 0
+    for i in a:
+        if i > b[cont]:
+            j += 1
+        elif i < b[cont]:
+            k += 1
+        cont += 1
+    res  = [j,k]
+    return res
+
+
 #
 # Complete the simpleArraySum function below.
 #
